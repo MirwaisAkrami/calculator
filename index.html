@@ -13,18 +13,25 @@
 
         .calc-wrapper {
             border: 1px solid black;
-            padding-left: 25px;
+            padding: 25px;
             margin: 20px;
+            width: 60%;
+            margin: auto;
+        }
+
+        .input-control {
+            height: 25px;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
     <h1 id="our-title" class="calc-title text-center" >Calculator</h1>
-    <hr>
+    <hr/>
     <!-- div element is used to make divisions in html page, this makes it easy to style and make html element -->
-    <div class="calc-wrapper">
-        <h6 class="text-center">Calculator Body</h6>
+    <div class="calc-wrapper text-center">
+        <input type="text" class="input-control" placeholder="Enter equation"/>
     </div>
 </body>
 
