@@ -23,3 +23,6 @@ We can style HTML elements in four ways
 - INPUT is used to get the user input either from keyboard or mouse, examples: text, number, checkbox, radio, file etc.
 - `margin: auto`  sets the element in the center of it's parent.
 - Try to use `%` in the measurings in the CSS, it helps with responsive UI.
+
+
+- `p` tag is a block element i.e taking the whole line whilst `span` is an inline element i.e only takes the width of the text 
