@@ -22,12 +22,39 @@
         .input-control {
             height: 25px;
             width: 98%;
+            border: .5px solid grey;
+            border-radius: 3px;
         }
 
         .result {
             border: .5px solid grey;
             padding: 4px;
-            margin-top: 4px
+            margin-top: 4px;
+            border-radius: 3px;
+        }
+
+        /* Calculator buttons CSS */
+        .c-table {
+            width: 100%;
+        }
+
+        .c-cell {
+            border: .5px solid grey;
+            border-radius: 3px;
+            padding: 6px;
+            /* Change the mouse cursor to a hand shaped pointer */
+            cursor: pointer;
+        }
+
+        /* Whenever pointer enters the boundaries of an element, that element trigger hover event
+        and a class disegnated with :hover will be called */
+        .c-cell:hover {
+            background-color: lightgray;
+        }
+
+        .c-cell-equal:hover {
+            background-color: green;
+            color: white;
         }
     </style>
 </head>
@@ -42,6 +69,103 @@
             <p>RESULT</p>
         </div>
         <hr>
+        <table class="c-table">
+            <!-- First row of calculator buttons -->
+            <tr class="c-row">
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>7</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>8</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>9</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>/</span>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Second row of calculator buttons -->
+            <tr class="c-row">
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>4</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>5</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>6</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>&times;</span>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Third row of calculator buttons -->
+            <tr class="c-row">
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>1</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>2</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>3</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>-</span>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Fourth row of calculator buttons -->
+            <tr class="c-row">
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>.</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>0</span>
+                    </div>
+                </td>
+                <td class="c-cell c-cell-equal">
+                    <div class="c-btn">
+                        <span>=</span>
+                    </div>
+                </td>
+                <td class="c-cell">
+                    <div class="c-btn">
+                        <span>+</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 
