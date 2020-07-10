@@ -60,3 +60,23 @@ and a class disegnated with :hover will be called */
     background-color: green;
     color: white;
 }
+
+.c-cell-color:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.c-number-color:hover {
+	background-color: #17a2b8;
+	color: white;
+}
+
+.c-symbol-color:hover {
+	background-color: #dc3545;
+	color: white;	
+}
+
+.c-decimal-color:hover {
+	background-color: #007bff;
+	color:
+}

@@ -19,22 +19,22 @@
         <table class="c-table">
             <!-- First row of calculator buttons -->
             <tr class="c-row">
-                <td class="c-cell" onclick="appendToInputField(7)">
+                <td class="c-cell c-number-color" onclick="appendToInputField(7)">
                     <div class="c-btn">
                         <span>7</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(8)">
                     <div class="c-btn">
                         <span>8</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(9)">
                     <div class="c-btn">
                         <span>9</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-symbol-color" onclick="appendToInputField(/)">
                     <div class="c-btn">
                         <span>/</span>
                     </div>
@@ -43,22 +43,22 @@
 
             <!-- Second row of calculator buttons -->
             <tr class="c-row">
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(4)">
                     <div class="c-btn">
                         <span>4</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(5)">
                     <div class="c-btn">
                         <span>5</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(6)">
                     <div class="c-btn">
                         <span>6</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-symbol-color">
                     <div class="c-btn">
                         <span>&times;</span>
                     </div>
@@ -67,22 +67,22 @@
 
             <!-- Third row of calculator buttons -->
             <tr class="c-row">
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(1)">
                     <div class="c-btn">
                         <span>1</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(2)">
                     <div class="c-btn">
                         <span>2</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(3)">
                     <div class="c-btn">
                         <span>3</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-symbol-color">
                     <div class="c-btn">
                         <span>-</span>
                     </div>
@@ -91,12 +91,12 @@
 
             <!-- Fourth row of calculator buttons -->
             <tr class="c-row">
-                <td class="c-cell">
+                <td class="c-cell c-decimal-color" onclick="appendToInputField(.)">
                     <div class="c-btn">
                         <span>.</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-number-color" onclick="appendToInputField(0)">
                     <div class="c-btn">
                         <span>0</span>
                     </div>
@@ -106,18 +106,28 @@
                         <span>=</span>
                     </div>
                 </td>
-                <td class="c-cell">
+                <td class="c-cell c-symbol-color">
                     <div class="c-btn">
                         <span>+</span>
                     </div>
                 </td>
             </tr>
+			</table>
+			<table class="c-table" >
+			<!-- Fifth row of calculator buttons -->
+			<tr class="c-row ">
+				<td class="c-cell c-cell-color" onclick="clearInputField()">
+					<div class="c-btn ">
+						<span>AC</span>
+					</div>
+				</td>
+			</tr>
         </table>
     </div>
+	<div></div>
 </body>
 <script>
-    function AppendToInputField(n) {
-        ewr-rwerew-wer-wer-wer
+    function appendToInputField(n) {
         console.log('The number is: ', n);
         // Select DOM element using it's ID
         const inputField = document.getElementById('input_field');
@@ -126,6 +136,9 @@
         // The new value of the input field is previous value + new n
         inputField.value = fieldValue + n;
     }
+	function clearInputField() {
+		document.getElementById('input_field').value='';
+	}
 </script>
-
+/
 </html>
