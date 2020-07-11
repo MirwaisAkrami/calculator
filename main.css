@@ -1,0 +1,62 @@
+/* CSS COLOR CODES
+BlUE: #007bff
+RED #dc3545
+YELLOW #ffc107
+INFO #17a2b8
+GREEN: #28a745
+*/
+
+
+.text-center {
+    text-align: center;
+}
+.calc-title {
+    color: green;
+}
+
+.calc-wrapper {
+    border: 1px solid black;
+    padding: 25px;
+    margin: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.input-control {
+    height: 25px;
+    border: .5px solid grey;
+    border-radius: 3px;
+    width: calC(100% - 8px);
+
+}
+
+.result {
+    border: .5px solid grey;
+    padding: 4px;
+    margin-top: 4px;
+    border-radius: 3px;
+}
+
+/* Calculator buttons CSS */
+.c-table {
+    width: 100%;
+}
+
+.c-cell {
+    border: .5px solid grey;
+    border-radius: 3px;
+    padding: 6px;
+    /* Change the mouse cursor to a hand shaped pointer */
+    cursor: pointer;
+}
+
+/* Whenever pointer enters the boundaries of an element, that element trigger hover event
+and a class disegnated with :hover will be called */
+.c-cell:hover {
+    background-color: lightgray;
+}
+
+.c-cell-equal:hover {
+    background-color: green;
+    color: white;
+}

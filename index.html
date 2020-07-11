@@ -3,69 +3,15 @@
 
 <head>
     <title>calC</title>
-    <style>
-        .text-center {
-            text-align: center;
-        }
-        .calc-title {
-            color: green;
-        }
-
-        .calc-wrapper {
-            border: 1px solid black;
-            padding: 25px;
-            margin: 20px;
-            width: 60%;
-            margin: auto;
-        }
-
-        .input-control {
-            height: 25px;
-            border: .5px solid grey;
-            border-radius: 3px;
-            width: calC(100% - 8px);
-
-        }
-
-        .result {
-            border: .5px solid grey;
-            padding: 4px;
-            margin-top: 4px;
-            border-radius: 3px;
-        }
-
-        /* Calculator buttons CSS */
-        .c-table {
-            width: 100%;
-        }
-
-        .c-cell {
-            border: .5px solid grey;
-            border-radius: 3px;
-            padding: 6px;
-            /* Change the mouse cursor to a hand shaped pointer */
-            cursor: pointer;
-        }
-
-        /* Whenever pointer enters the boundaries of an element, that element trigger hover event
-        and a class disegnated with :hover will be called */
-        .c-cell:hover {
-            background-color: lightgray;
-        }
-
-        .c-cell-equal:hover {
-            background-color: green;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
-    <h1 id="our-title" class="calc-title text-center" >Calculator</h1>
-    <hr/>
+    <h1 id="our-title" class="calc-title text-center">Calculator</h1>
+    <hr />
     <!-- div element is used to make divisions in html page, this makes it easy to style and make html element -->
     <div class="calc-wrapper text-center">
-        <input type="text" class="input-control" placeholder="Enter equation"/>
+        <input type="text" id="input_field" disabled class="input-control" placeholder="Enter equation" />
         <div class="result">
             <p>RESULT</p>
         </div>
@@ -73,7 +19,7 @@
         <table class="c-table">
             <!-- First row of calculator buttons -->
             <tr class="c-row">
-                <td class="c-cell">
+                <td class="c-cell" onclick="appendToInputField(7)">
                     <div class="c-btn">
                         <span>7</span>
                     </div>
@@ -169,5 +115,17 @@
         </table>
     </div>
 </body>
+<script>
+    function AppendToInputField(n) {
+        ewr-rwerew-wer-wer-wer
+        console.log('The number is: ', n);
+        // Select DOM element using it's ID
+        const inputField = document.getElementById('input_field');
+        // Save the previous value of the input field in the a temp variable
+        const fieldValue = inputField.value;
+        // The new value of the input field is previous value + new n
+        inputField.value = fieldValue + n;
+    }
+</script>
 
 </html>
